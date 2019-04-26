@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Andrzej Lichoń</title>
+    <meta name="Andrzej Lichoń" content="portfolio, html, css, java script, front end developer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="./style/css.css">
+    <link rel="stylesheet" href="./style/loader.css">
+    <link rel="stylesheet" href="./style/perfect-scrollbar.css">
+</head>
+
+<body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <div class="background ">
+        <div id="my-svg"></div>
+        <div class='backupBG'></div>
+        <div id='secondBG'></div>
+    </div>
+    <main>
+        <dvi class="box">
+            <div class="box-inner">
+                <div class="box-row">
+                    <p>Enjoy</p>
+                </div>
+                <div class="box-row">
+                    <p>summer!</p>
+                </div>
+                <hr>
+                <div class="box-row--small">
+                    <p>And find yourself</p>
+                </div>
+            </div>
+        </dvi>
+    </main>
+    <button class="pulse" id="btn">+</button>
+    <nav>
+        <div class="one nav">
+            <div class="inner">
+                <div class="title">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. </h2>
+                </div>
+                <!-- lista projektow -->
+            </div>
+        </div>
+        <div class="two nav">
+            <div class="inner">
+                <div class="header">
+                    <h2>Sed ut perspiciatis. </h2>
+                </div>
+            </div>
+        </div>
+        <div class="three nav">
+            <div class="inner">
+                <h2>At vero eos et accusamus.</h2>
+            </div>
+        </div>
+        <div class="four nav">
+            <div class="inner">
+                <a href="#" target="_blank">
+                    <img class="invert" src="./img/linkedin.svg" alt="github">
+                </a>
+                <a href="#" target="_blank">
+                    <img class="invert" src="./img/facebook.svg" alt="github">
+                </a>
+                <a href="#" target="_blank">
+                    <img class="invert" src="./img/github.svg" alt="github">
+                </a>
+                <a href="#" target="_blank">
+                    <img class="invert" src="./img/drive.svg" alt="Galeria">
+                </a>
+            </div>
+        </div>
+        <div class="five nav">
+            <div class="inner">
+
+            </div>
+        </div>
+        <div class="six nav">
+            <div class="inner">
+            </div>
+        </div>
+        <div class="seven nav">
+            <p>Copyright &#169; Andrzej Lichoń</p>
+            <div class="inner">
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/perfect-scrollbar.min.js"></script>
+    <script src="./scripts/emailScripts.js"></script>
+    <script>
+        var options = {
+            swipeEasing: true,
+            wheelSpeed: 0.4,
+            wheelPropagation: true,
+            minScrollbarLength: 20
+        };
+        const ps1 = new PerfectScrollbar('.one .inner', options);
+        const ps2 = new PerfectScrollbar('.two .inner', options);
+        const ps3 = new PerfectScrollbar('.three .inner', options);
+        ps1.update();
+        ps2.update();
+        ps3.update();
+    </script>
+
+</body>
+
+</html>
